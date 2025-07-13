@@ -1,18 +1,22 @@
-**🛍️ Retail Transaction Analytics Dashboard (Power BI)**
+## 🛍️ Retail Transaction Analytics Dashboard (Power BI)
 
 This project presents a detailed retail transaction analysis dashboard developed using Power BI, based on synthetic transactional data across different regions, customer demographics, product categories, and acquisition channels. It aims to uncover key trends in sales performance, customer behavior, product profitability, and fraud detection, with actionable business insights and recommendations.
 
 
-**📁 Project Objectives**
+## 📁 Project Objectives
 1.	Visualize and monitor retail KPIs across countries, acquisition sources, and product lines.
 2.	Identify top-performing customers, sales channels, and product categories.
 3.	Detect patterns of fraudulent transactions.
 4.	Provide data-driven recommendations to optimize marketing, inventory, and revenue strategies.
 
-📸 Dashboard Snapshot
+## 📸 Dashboard Snapshot
+
+Here's an overview of the Power BI dashboard analyzing transactions across products, regions, and channels:
+
+![Retail Dashboard Snapshot](dashboard-overview1.png)
 
  
-**📊Dashboard Overview** 
+## 📊Dashboard Overview
 1.  The Power BI dashboard includes: 
   a.  Summary Cards: Total transactions, revenue, profit, quantity ordered, and percentage of revenue without fraud. .
   b.  Charts and Visuals:
@@ -24,7 +28,7 @@ This project presents a detailed retail transaction analysis dashboard developed
     6.	Top Customers Table by Order Value and Volume
   
        
-**🧾Dataset Schema**
+## 🧾Dataset Schema
 | Column Name       | Data Type   | Description                                                        |
 | ----------------- | ----------- | ------------------------------------------------------------------ |
 | OrderID           | Integer     | Unique identifier for each order                                   |
@@ -48,8 +52,8 @@ This project presents a detailed retail transaction analysis dashboard developed
 
 
 
-**⚙️Steps Taken to Build the Dashboard**
-1.	Data Cleaning and Transformation (Power Query): 
+## ⚙️Steps Taken to Build the Dashboard
+1. Data Cleaning and Transformation (Power Query): 
   a.  Removed duplicates, handled null values.
   b.  Standardized date and numeric formats.
   c.  Created calculated columns:
@@ -58,16 +62,16 @@ This project presents a detailed retail transaction analysis dashboard developed
       3.  FraudEncode = If(Fraud="True",0,1)
       4.  TransactionOrder = OrderQuantityProductPrice
       5.  TransactionwithNoFraud = FraudEncodeTransactionOrder
-3.	Data Modeling: .
+2.	Data Modeling: .
   a.  Star schema with one fact table and relevant dimension tables (e.g., Product Category, Country, Acquisition Source).
-5.	DAX Measures Created:
+3.	DAX Measures Created:
        1.  PercentageTransactionwithNoFraud = sum(FraudEncode)/COUNT(FraudEncode)*100
-7.	Visualization:
+4.	Visualization:
   a.  Bar charts, Donut charts, Line charts, Card KPIs, and interactive filters/slicers.
   b.  User-level interactivity with slicers for country, gender, fraud status, acquisition source, card type, and time filters.
 
 
-**🔍 Key Insights**
+## 🔍 Key Insights
 1.	Plants are the highest-performing product category, accounting for 93% of total profit.
 2.	The United States and Australia generated the highest profits among all countries.
 3.	Google Ads drives the most profitable and voluminous transactions.
@@ -76,7 +80,7 @@ This project presents a detailed retail transaction analysis dashboard developed
 6.	A few customers significantly impact revenue, suggesting high-LTV (lifetime value) users.
 
 
-**📌Recommendations**
+## 📌Recommendations
 1.	Product Strategy: Double down on Plants category through targeted promotions and bundled sales with low-performing categories like Pots.
 2.	Customer Retention: Launch loyalty programs or exclusive offers for high-value repeat customers.
 3.	Marketing Optimization: Allocate more budget to Google Ads, and investigate why Meta and YouTube campaigns underperform.
@@ -85,7 +89,7 @@ This project presents a detailed retail transaction analysis dashboard developed
 6.	Fraud Management: Maintain current fraud controls and continue monitoring, especially in Q3/Q4.
 
 
-**🔗 Connect with Me** 
+## 🔗 Connect with Me
 1.  I'm a medical doctor and data analyst with experience applying data science to public health and commerce.
 2.  Open to collaborations and remote roles globally.
 3.  🔗 LinkedIn Profile: www.linkedin.com/in/uchechukwu-efifie-b7420047
