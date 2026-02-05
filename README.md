@@ -90,6 +90,6 @@ Here's an overview of the Power BI dashboard analyzing transactions across produ
 
 
 ## 🔗 Connect with Me
-1.  I'm a medical doctor and data analyst with experience applying data science to public health and commerce.
+1.  I'm a medical doctor and data science manager with experience applying data science to public health and commerce.
 2.  Open to collaborations and remote roles globally.
 3.  🔗 LinkedIn Profile: www.linkedin.com/in/uchechukwu-efifie-b7420047
